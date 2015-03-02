@@ -17,6 +17,7 @@ function plugin(browserify, options) {
     var appRoot = (options.appRoot || outputFolder);
     var verbose = Boolean(options.verbose);
     var stylusOptions = (options.stylus || {});
+    var bundleCallback = (options.bundle || function(outputStream) {});
 
     var outputStream = null;
 
@@ -25,6 +26,7 @@ function plugin(browserify, options) {
         pipeline.on('end', function() {
             outputStream.push(null);
         });
+        bundleCallback(outputStream);
         browserify.emit('bundleCss', outputStream);
     });
 
