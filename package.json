@@ -1,0 +1,31 @@
+{
+  "name": "stylusify",
+  "version": "0.0.1",
+  "description": "Browserify plugin to output Stylus as CSS files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timkendrick/stylusify.git"
+  },
+  "keywords": [
+    "browserify",
+    "stylus",
+    "css"
+  ],
+  "author": "Tim Kendrick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timkendrick/stylusify/issues"
+  },
+  "homepage": "https://github.com/timkendrick/stylusify",
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "stylus": "^0.50.0",
+    "through": "^2.3.6",
+    "tildify": "^1.0.0",
+    "vinyl": "^0.4.6"
+  }
+}
